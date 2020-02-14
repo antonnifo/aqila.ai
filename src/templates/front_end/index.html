@@ -356,9 +356,7 @@
     <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
       <h3 class="title text-center mb-lg-5 mb-sm-4 mb-4">
         <span>Drop Us a</span> Line
-        {% comment %} alerts {% endcomment %}
 
-        {% include 'partials/_alerts.html' %}
       </h3>
       <div class=" contact-form-txt">
         <form action="{% url 'contact' %}" method="post">
@@ -385,6 +383,9 @@
       </div>
     </div>
   </section>
+          {% comment %} alerts {% endcomment %}
+
+        {% include 'partials/_alerts.html' %}
   <!--//contact -->
   <!-- footer -->
   <section class="bottom-footer py-lg-4 py-md-3 py-sm-3 py-3">
