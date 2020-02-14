@@ -1,0 +1,1311 @@
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background: #fff;
+  letter-spacing: 1px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body a {
+  outline: none;
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+  text-decoration: none;
+}
+
+body a:hover {
+  text-decoration: none;
+}
+
+body a:focus,
+a:hover {
+  text-decoration: none;
+}
+
+input[type="button"],
+input[type="submit"] {
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+  letter-spacing: 1px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+select,
+input[type="email"],
+input[type="text"],
+input[type=password],
+input[type="button"],
+input[type="submit"],
+textarea {
+  font-family: 'Open Sans', sans-serif;
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+  letter-spacing: 1px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  letter-spacing: 1px;
+font-family: 'Muli', sans-serif;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+ul li {
+  display: inline-block;
+}
+
+
+/*-- //Reset-Code --*/
+h3.title {
+    font-size:40px;
+    color: #424141;
+    letter-spacing: 3px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+h3.clr{color:#fff;}
+.about-grid-wthree p, .goals-making-wthree p, .blog-left-wthree p, .new-projects-us p {
+    font-size: 13px;
+    color: #4c4c4c;
+    line-height: 25px;
+}
+.goals-making-wthree h4, .blog-left-wthree h4 a,.new-projects-us h6 a {
+    font-size: 26px;
+    color: #1860bd;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.w3layouts-team-grid h4 {
+    font-size: 21px;
+    color: #1860bd;
+    text-transform: capitalize;
+}
+/* header */
+/* CSS Document */
+
+.toggle-2,
+.toggle,
+[id^=drop] {
+  display: none;
+}
+/* Giving a background-color to the nav container. */
+nav {
+    margin: 0;
+    padding-top: 20px;
+    padding-left: 22px;
+    float: left;
+}
+#logo a {
+    float: left;
+    display: initial;
+    font-weight: 700;
+    text-align: center;
+    font-size: 46px;
+    color: #fff;
+    line-height: 41px;
+    background: #00d0ff;
+    padding: 16px 21px 16px;
+}
+/* Since we'll have the "ul li" "float:left"
+* we need to add a clear after the container. */
+
+nav:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Removing padding, margin and "list-style" from the "ul",
+* and adding "position:reltive" */
+nav ul {
+    float: left;
+    margin: 0;
+    list-style: none;
+    position: relative;
+}
+/* Positioning the navigation items inline */
+
+nav ul li {
+  margin: 0px;
+  display: inline-block;
+  float: left;
+}
+/* Styling the links */
+nav ul li a {
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    padding: 8px 15px;
+    border-radius: 50px;
+    display: inline-block;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+nav ul li ul li:hover {
+  background: #f8f9fa;
+}
+
+.menu li .drop-text:hover {
+  color: #000;
+  border: none;
+}
+/* Background color change on Hover */
+/*.menu li.active a,.menu li a:hover{border-bottom: 1px solid #d4d4d4;}*/
+.menu li a:hover {
+  opacity: 0.8;
+  color:#000;
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+}
+/* Hide Dropdowns by Default
+* and giving it a position of absolute */
+
+nav ul ul {
+  display: none;
+  position: absolute;
+  top: 33px;
+  background: #000;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: -1px 1px 5px black;
+}
+
+
+/* Display Dropdowns on Hover */
+
+nav ul li:hover>ul {
+  display: inherit;
+}
+
+
+/* Fisrt Tier Dropdown */
+
+nav ul ul li {
+  width: 170px;
+  float: none;
+  display: list-item;
+  position: relative;
+}
+
+nav ul ul li a {
+  color: #fff;
+  padding: 5px 10px;
+  display: block;
+  background: transparent;
+}
+
+
+/* Second, Third and more Tiers	
+* We move the 2nd and 3rd etc tier dropdowns to the left
+* by the amount of the width of the first tier.
+*/
+
+nav ul ul ul li {
+  position: relative;
+  top: -60px;
+  /* has to be the same number as the "width" of "nav ul ul li" */
+  left: 170px;
+}
+
+
+/* Change ' +' in order to change the Dropdown symbol */
+
+li>a:only-child:after {
+  content: '';
+}
+
+a.reqe-button {
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  border-radius: 4px;
+}
+
+
+/* Media Queries
+--------------------------------------------- */
+
+@media(max-width: 800px) {
+  nav a {
+    font-size: 13px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  #logo {
+    display: block;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    float: none;
+	
+  }
+  nav {
+    margin: 0;
+  }
+  /* Hide the navigation menu by default */
+  /* Also hide the  */
+  .toggle+a,
+  .menu {
+    display: none;
+  }
+  /* Stylinf the toggle lable */
+  .toggle {
+    display: block;
+    padding: 6px 17px;
+    font-size: 14px;
+    text-decoration: none;
+    border: none;
+    float: right;
+	margin-right: 6px;
+    background-color:#00d0ff;
+    color: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  .menu .toggle {
+    float: none;
+    text-align: center;
+    margin: auto;
+    max-width: 138px;
+    padding: 10px 18px;
+    font-weight: normal;
+    font-size: 15px;
+    letter-spacing: 1px;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+  }
+  .menu .toggle:hover {
+    color: #fff;
+    opacity: .8;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+  }
+  .toggle:hover {
+    color: #000;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+  }
+  label.toggle.toogle-2 {
+    background: transparent;
+    text-transform: capitalize;
+    font-size: 14px;
+    color: #fff;
+  }
+  /* Display Dropdown when clicked on Parent Lable */
+[id^=drop]:checked+ul {
+    display: block;
+    background: #efefef;
+    padding: 15px 0;
+    text-align: center;
+    width: 100%;
+    z-index: 999;
+}
+  /* Change menu item's width to 100% */
+ nav ul li {
+    display: block;
+    width: 100%;
+    padding:2px 0;
+  }
+  nav ul ul .toggle,
+  nav ul ul a {
+    padding: 0 40px;
+  }
+  nav ul ul ul a {
+    padding: 0 80px;
+  }
+  nav a:hover,
+  nav ul ul ul a {
+    background-color: transparent;
+  }
+  nav ul li ul li .toggle,
+  nav ul ul a,
+  nav ul ul ul a {
+    padding: 14px 20px;
+    color: #FFF;
+    font-size: 15px;
+  }
+  /* 
+nav ul li ul li .toggle,
+nav ul ul a {
+background-color: #212121;
+} */
+  /* Hide Dropdowns by Default */
+  nav ul ul {
+    float: none;
+    position: static;
+    color: #ffffff;
+    /* has to be the same number as the "line-height" of "nav a" */
+  }
+  /* Hide menus on hover */
+  nav ul ul li:hover>ul,
+  nav ul li:hover>ul {
+    display: none;
+  }
+  /* Fisrt Tier Dropdown */
+  nav ul ul li {
+    display: block;
+    width: 100%;
+    padding: 0;
+  }
+  nav ul ul ul li {
+    position: static;
+    /* has to be the same number as the "width" of "nav ul ul li" */
+  }
+  nav a {
+    color: #000;
+    font-size: 15px;
+  }
+  .menu li.active a,
+  .menu li a:hover {
+    background: transparent;
+  }
+}
+
+@media all and (max-width: 568px) {
+  nav a,
+  .menu .toggle,
+  nav ul li ul li .toggle,
+  nav ul ul a,
+  nav ul ul ul a {
+    font-size: 14px;
+  }
+}
+
+@media all and (max-width: 320px) {
+  nav a,
+  .menu .toggle,
+  nav ul li ul li .toggle,
+  nav ul ul a,
+  nav ul ul ul a {
+    font-size: 13px;
+  }
+}
+.social-icons ul li {
+    padding-right: 20px;
+}
+.form-w3layouts-grid {
+    float: right;
+    padding-top: 17px;
+    padding-right: 31px;
+}
+.main-building{display:flex;
+}
+
+.just-build-search .search {
+    outline: none;
+    padding: 8px 13px;
+    font-size: 14px;
+    color: #000;
+    width:100%;
+    background: transparent;
+    text-transform: capitalize;
+    border: 1px solid #00d0ff;
+    letter-spacing: 2px;
+}
+.form-w3layouts-grid button{
+    color: #fff;
+    border: none;
+    padding:9px 0px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #00d0ff;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    transition: 0.5s all;
+    border: 1px solid #00d0ff;
+    cursor: pointer;
+    width: 23%;
+	-webkit-flex-basis: 23%;
+     flex-basis: 23%;
+	 box-sizing: border-box;
+    font-size: 13px;
+    border-radius: 0px;
+    text-align: center;
+}
+form.newsletter {
+    margin: 0;
+}
+.just-build-search{
+-webkit-flex-basis:77%;
+flex-basis:77%;
+box-sizing: border-box;}
+/*-- dropdown --*/
+/* headder */
+.main-top {
+    /* background: url("/static/images/b6.jpg") no-repeat bottom; */
+    background: url(../images/b6.jpg) no-repeat bottom;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    min-height: 800px;
+    position: relative;
+}
+.headder-top {
+    background: #ffffff;
+    /* padding: 0em 1em; */
+    /* box-shadow: -1px 2px 19px #929292; */
+    position: absolute;
+    width: 100%;
+}
+.mainer-left-grid {
+    padding-top: 17em;
+}
+.two-demo-button p {
+    color:#eaeaea;
+    font-weight: 100;
+    line-height: 30px;
+    font-size: 15px;
+}
+.banner-right-txt h4 {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 11px;
+}
+.two-demo-button p span {
+    font-size: 17px;
+    color: #fff;
+}
+.banner-right-txt h5 {
+    font-size:3em;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.banner-right-txt h5 span,h3 span {
+color: #00d0ff;
+}
+.social-icons ul li a span {
+    color: #fff;
+    font-size: 14px;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+    -moz-transition: 0.5s all;
+}
+.social-icons ul li a span:hover{
+    color: #cacaca;
+}
+.social-icons {
+    padding-bottom: 74px;
+}
+/*--//banner--*/
+/*-- about --*/
+.about-fashion-grid {
+    padding: 20px 20px;
+    background: #f3f3f3;
+    box-shadow: 1px 1px 6px #d2d2d2;
+}
+.about-icon span {
+    font-size: 28px;
+    color: #1860bd;
+}
+.number-wthree-info h6,.about-fashion-grid h6 {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing:1px;
+    font-weight: 600;
+}
+/*--//about --*/
+/*--our goals--*/
+.service-grid-set {
+    padding: 3em 4em;
+}
+.w3layouts-make-goals {
+    background: url(../images/goals.png) no-repeat center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    min-height: 460px;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+}
+.jst-icon-goal {
+    width: 65px;
+    height: 65px;
+    margin: 0px auto;
+    border: #1860bd 2px solid;
+    border-radius: 50%;
+}
+.jst-icon-goal span {
+    color: #00d0ff;
+    font-size: 23px;
+    line-height: 64px;
+}
+/*--//our goals--*/
+/*-- stats-count-- */
+.matter-txt{
+  background: url(../images/b3.jpg) no-repeat center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;}
+  .matter-w3layouts-text h5 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 3px;
+
+}
+.stats-count,.clents {
+  background: url(../images/b2.jpg) no-repeat center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+}
+
+.number-wthree-info h5 {
+  font-size: 43px;
+  font-weight: 700;
+  color: #fff;
+}
+
+ .blog-date-grid ul li a, .w3layouts-team-grid h6 {
+    font-size: 14px;
+    color: #525252;
+    font-weight: 400;
+    letter-spacing: 0px;
+}
+/*-- //stats-count-- */
+/* blog */
+.blog-left-position, .blog-right-position {
+    position: absolute;
+    width: 89%;
+    z-index: 9;
+    bottom: 36px;
+    background: #f9f9f9;
+    padding: 39px 45px;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 6px black;
+}
+.blog-left-position {
+    left: -26%;
+}
+.blog-right-position { right: -26%;}
+.w3layouts-team-grid {
+    background: #fff;
+    padding: 26px 26px;
+}
+/*-- //blog --*/
+/*-- gallery --*/
+.gallery ,.service-grid-set{
+    background: #f1f1f1;
+}
+.gallery-grids {
+    padding: 25px 25px;
+    box-shadow: -1px 1px 10px #adadad;
+    background: #fff;
+}
+/* popup */
+.popup-effect {
+  position:fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 0ms;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 99;
+}
+
+.popup-effect:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  background: #fff;
+  border-radius: 4px;
+  max-width: 430px;
+  position: relative;
+  margin: 3em auto;
+  padding: 3em 2em;
+  z-index: 999;
+  text-align: center;
+}
+
+.popup .close {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+}
+
+.popup .close:hover {
+  color: #686de0;
+}
+/* //popup */
+/*--//gallery--*/
+/*-- map--*/
+.address_mail_footer_grids iframe {
+    width: 100%;
+    height: 24em;
+    border: none;
+}
+/*--//map--*/
+/*-- contact-- */
+.contact-forms input, .contact-forms textarea {
+    width: 100%;
+    font-size: 14px;
+    color: #000;
+    padding: .8em .7em;
+    outline: none;
+    background: #fbfbfb;
+    border: none;
+    border-radius: 0px;
+    box-shadow: 0px 0px 4px #888888;
+}
+.contact-forms textarea {
+    resize: none;
+    height: 15em;
+}
+.sent-butnn {
+    font-size: 16px;
+    padding: 6px 26px;
+    color: #fff;
+    background:#00d0ff;
+    letter-spacing: 1px;
+}
+/*--//contact-- */
+/* footer */
+.footer-w3layouts-head h2 a {
+    font-size: 29px;
+    font-weight: 600;
+    color:#00d0ff;
+}
+.footer-top p, .footer-right-side p,.footer-top p a ,.team-grid-set p{
+    font-size: 13px;
+    color:#c7c7c7;
+    line-height: 25px;
+}
+.bottom-footer {
+    background: #30323e;
+}
+.footer-w3layouts-head h5 a {
+    font-size: 29px;
+    font-weight: 600;
+    color: #fff;
+}
+a.move-top span{
+    display: inline-block;
+    font-size: 25px;
+    color: #fff;
+}
+.bottem-wthree-footer p a:hover{color:#fff;}
+.footer-top p span{
+    font-size: 16px;
+    color: #fff;
+}
+.form-w3layouts-grid button.btn:hover,.blog-left-wthree h4 a:hover,.sent-butnn:hover{opacity:0.8;}
+.bottem-wthree-footer p {
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: 2px;
+}
+.bottem-wthree-footer p a {
+    color: #00d0ff;
+    font-size: 14px;
+}
+.bottem-wthree-footer{
+    background: #000;
+}
+/*--footer--*/
+
+/*--responsive--*/
+@media(max-width:1920px){
+	
+}
+@media(max-width:1680px){
+	
+}
+@media(max-width:1600px){
+	
+}
+@media(max-width:1440px){
+.service-grid-set {
+    padding: 3em 3em;
+}
+.main-top {
+    min-height: 680px;	
+	}
+	.mainer-left-grid {
+    padding-top: 14em;
+}
+.banner-right-txt h5 {
+    font-size: 2.7em;
+}
+.banner-right-txt h4 {
+    letter-spacing: 9px;
+}
+#logo a {
+    font-size: 43px;
+}
+nav {
+    padding-left: 17px
+}
+.jst-icon-goal {
+    width: 62px;
+    height: 62px;
+	}
+.jst-icon-goal span {
+    line-height: 61px;
+}
+.number-wthree-info h5 {
+    font-size: 40px;
+	}
+.address_mail_footer_grids iframe {
+    height: 22em;
+}
+}
+@media(max-width:1366px){
+.mainer-left-grid {
+    padding-top: 13.5em;
+}	
+.number-wthree-info h5 {
+    font-size: 38px;
+}
+.blog-left-position, .blog-right-position {
+    padding: 37px 44px;
+}
+h3.title {
+    font-size: 38px;
+	}
+.w3layouts-team-grid {
+    padding: 24px 24px;
+}
+.contact-forms textarea {
+    height: 14em;
+}
+.jst-icon-goal {
+    width: 60px;
+    height: 60px;
+}
+.jst-icon-goal span {
+    line-height: 56px;
+}
+}
+@media(max-width:1280px){
+.main-top {
+    min-height: 600px;
+}	
+.mainer-left-grid {
+    padding-top: 11em;
+}
+nav {
+    padding-top: 19px;
+	}
+#logo a {
+    padding: 14px 21px 14px;
+}
+.banner-right-txt h4 {
+    font-size: 19px;
+}
+.about-icon span {
+    font-size: 26px;
+	}
+.goals-making-wthree h4, .blog-left-wthree h4 a,.new-projects-us h6 a {
+    font-size: 24px;
+	}
+.gallery-grids {
+    padding: 23px 23px;
+	}
+.contact-forms input, .contact-forms textarea {
+    padding: .7em .7em;
+	}
+.footer-w3layouts-head h2 a {
+    font-size: 28px;
+	}
+}
+@media(max-width:1080px){
+.about-fashion-grid {
+    padding: 18px 18px;
+	}
+.service-grid-set {
+    padding: 2.5em 1.5em;
+}
+.jst-icon-goal span {
+    font-size: 21px;
+	}
+	.jst-icon-goal {
+    width: 57px;
+    height: 57px;
+}
+.blog-left-position, .blog-right-position {
+    padding: 29px 30px;
+	width: 96%;
+	 bottom: 18px;
+}
+.gallery-grids {
+    padding: 21px 20px;
+}
+.w3layouts-team-grid {
+    padding: 21px 21px;
+}
+.address_mail_footer_grids iframe {
+    height: 19em;
+}
+}
+@media(max-width:1050px){
+nav ul li a {
+    letter-spacing: 1px;
+    padding: 8px 13px;
+}
+#logo a {
+    font-size: 41px;
+}
+h3.title {
+    letter-spacing: 2px;
+}	
+.number-wthree-info h6, .about-fashion-grid h6 {
+    font-size: 17px;
+	}
+}
+@media(max-width:1024px){
+.banner-right-txt h5 {
+    font-size: 2.5em;
+}
+.social-icons {
+    padding-bottom: 62px;
+}
+.main-top {
+    min-height: 589px;
+}
+.two-demo-button p span {
+    font-size: 15px;
+}
+.number-wthree-info h5 {
+    font-size: 35px;
+}
+.w3layouts-team-grid h4 {
+    font-size: 19px;
+}
+.contact-forms textarea {
+    height: 13em;
+}
+.sent-butnn {
+    font-size: 15px;
+}
+.about-grid-wthree {
+    margin-bottom: 29px;
+}	
+}
+@media(max-width:991px){
+.banner-right-txt h4 {
+    font-size: 18px;
+    letter-spacing: 7px;
+}
+h3.title {
+    font-size: 36px;
+}
+.w3layouts-make-goals {
+    min-height: 388px;
+}	
+.blog-right-position {
+    right: -12%;
+    bottom: -350px;
+    width: 73%;
+}
+.blog-left-position {
+    left: -12%;
+    width: 66%;
+    bottom:145px;
+}
+.back-ground-color:nth-child(2) {
+    margin-top: 42px;
+}
+.team-three-grids {
+    margin-top: 30px;
+}
+.address_mail_footer_grids iframe {
+    height: 17em;
+}
+}
+@media(max-width:900px){
+nav {
+    padding-left: 7px;
+}
+.form-w3layouts-grid {
+    padding-right: 18px;
+}	
+.blog-left-position {
+    left: -7%;
+	}
+.blog-right-position {
+    right: -5%;
+	}
+.blog-left-position, .blog-right-position {
+    padding: 26px 28px
+	}
+.goals-making-wthree h4, .blog-left-wthree h4 a, .new-projects-us h6 a {
+    font-size: 22px;
+}
+.contact-forms textarea {
+    height: 12em;
+}
+.footer-w3layouts-head h2 a {
+    font-size: 27px;
+}
+}
+@media(max-width:800px){
+nav ul li a {
+    padding: 7px 10px;
+}	
+.main-top {
+    min-height: 567px;
+}
+.social-icons {
+    padding-bottom: 54px;
+}
+.about-fashion-grid {
+    padding: 17px 17px;
+}
+.number-wthree-info h5 {
+    font-size: 33px;
+}
+.blog-left-position, .blog-right-position {
+    position: inherit;
+	width:100%;
+	left:0%;
+	bottom:0px;
+	}
+.back-ground-color:nth-child(1) {
+    margin-bottom: 41px;
+}
+.contact-forms input, .contact-forms textarea {
+    padding: .6em .6em;
+}
+}
+@media(max-width:768px){
+	nav {
+    padding-left: 0px;
+}
+.form-w3layouts-grid {
+    padding-right: 9px;
+}
+nav ul li a {
+    letter-spacing: 0px;
+	}
+	#logo a {
+    font-size: 37px;
+}
+.w3layouts-make-goals {
+    min-height: 311px;
+}
+.gallery-grids {
+    padding: 17px 17px;
+}
+.w3layouts-team-grid {
+    padding: 18px 18px;
+}
+}
+@media(max-width:767px){
+nav {
+    float: none;
+}
+.form-w3layouts-grid {
+    float: none;
+    padding-top: 0px;
+    padding-right: 0px;
+	}
+	.mainer-left-grid {
+    padding-top: 12em;
+}
+h3.title {
+    font-size: 34px;
+}
+.blog-left-position, .blog-right-position {
+    padding: 23px 24px;
+}
+.team-by-team {
+    width: 51%;
+    margin: 0px auto;
+}
+.team-by-team:nth-child(1),
+.team-by-team:nth-child(2){margin-bottom:20px;}
+.address_mail_footer_grids iframe {
+    height: 15em;
+}
+.footer-right-side{margin-top:20px;}
+}
+@media(max-width:736px){
+.banner-right-txt h5 {
+    font-size: 2.3em;
+}
+.social-icons {
+    padding-bottom: 39px;
+}
+.social-icons ul li {
+    padding-right: 17px;
+}
+.banner-right-txt h4 {
+    letter-spacing: 5px;
+}	
+.two-demo-button p {
+    font-size: 14px;
+}
+.main-top {
+    min-height: 551px;
+}
+.about-icon span {
+    font-size: 24px;
+}
+.number-wthree-info h5 {
+    font-size: 31px;
+}
+.w3layouts-team-grid h4 {
+    font-size: 18px;
+}
+.blog-date-grid ul li a, .w3layouts-team-grid h6 {
+    font-size: 13px;
+	}
+	.contact-forms textarea {
+    height: 11em;
+}
+}
+@media(max-width:667px){
+#logo a {
+    padding: 12px 19px 13px;
+}
+h3.title {
+    letter-spacing: 1px;
+}
+.team-by-team {
+    width: 53%;
+}
+.footer-w3layouts-head h2 a {
+    font-size: 25px;
+}
+.footer-top p span {
+    font-size: 15px;
+}	
+}
+@media(max-width:640px){
+	.jst-icon-goal {
+    width: 54px;
+    height: 54px;
+}
+.jst-icon-goal span {
+    line-height: 50px;
+}
+.blog-left-position, .blog-right-position {
+    padding: 21px 23px;
+}
+.gallery-grids {
+    padding: 14px 14px;
+}
+.address_mail_footer_grids iframe {
+    height: 13em;
+}
+}
+@media(max-width:600px){
+.number-wthree-info h5 {
+    font-size: 29px;
+}
+.w3layouts-make-goals {
+    min-height: 285px;
+}
+.contact-forms textarea {
+    height: 10em;
+}	
+.main-top {
+    min-height: 527px;
+}
+.social-icons {
+    padding-bottom: 30px;
+}
+.mainer-left-grid {
+    padding-top: 11.5em;
+}
+nav {
+    padding-top: 18px;
+}
+}
+@media(max-width:568px){
+.about-grid-grids {
+    width: 50%;
+}
+.goals-making-wthree {
+    text-align: center;
+    margin-top: 15px;
+}
+h3.title {
+    font-size: 32px;
+}
+.team-by-team {
+    width: 51%;
+}
+}
+@media(max-width:480px){
+.banner-right-txt h5 {
+    font-size: 2.1em;
+}
+.two-demo-button p {
+    line-height: 26px;
+}	
+.main-top {
+    min-height: 514px;
+}
+.social-icons ul li {
+    padding-right: 13px;
+}
+.team-by-team {
+    width: 57%;
+}
+.bottem-wthree-footer p {
+    letter-spacing: 1px;
+}
+}
+@media(max-width:440px){
+#logo a {
+    font-size: 35px;
+    padding: 10px 17px 10px;
+}
+nav {
+    padding-top: 16px;
+}
+.service-grid-set {
+    padding: 2em 1.5em;
+}
+.w3layouts-make-goals {
+    min-height: 253px;
+}
+.goals-making-wthree h4, .blog-left-wthree h4 a, .new-projects-us h6 a {
+    font-size: 21px;
+}
+.team-by-team {
+    width: 62%;
+}
+.w3layouts-team-grid {
+    padding: 14px 14px;
+}
+.bottem-wthree-footer p {
+    line-height: 28px;
+	}
+}
+@media(max-width:414px){
+.number-wthree-info h6, .about-fashion-grid h6 {
+    font-size: 16px;
+}
+.about-fashion-grid {
+    padding: 15px 15px;
+}
+.back-ground-color:nth-child(2) {
+    margin-top: 36px;
+}
+.team-by-team {
+    width: 66%;
+}
+
+}
+@media(max-width:384px){
+.about-grid-grids {
+    width: 55%;
+    margin: 0px auto;
+}
+h3.title {
+    font-size: 30px;
+}
+.number-wthree-info h5 {
+    font-size: 27px;
+}
+.blog-left-position, .blog-right-position {
+    padding: 20px 20px;
+}
+.team-by-team {
+    width: 72%;
+}
+}
+@media(max-width:375px){
+.banner-right-txt h4 {
+    letter-spacing: 3px;
+	font-size: 17px;
+}	
+.banner-right-txt h5 {
+    font-size: 1.9em;
+}
+nav {
+    padding-top: 15px;
+}
+.about-grid-grids {
+    width: 59%;
+	}
+}
+@media(max-width:320px){
+.service-grid-set {
+    padding: 2em 1em;
+}
+.about-grid-grids {
+    width: 63%;
+}	
+.team-by-team {
+    width: 86%;
+}
+.contact-forms textarea {
+    height: 9em;
+}
+}
+/*--//responsive--*/
