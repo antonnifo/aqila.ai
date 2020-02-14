@@ -1,0 +1,442 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+
+  <div class="main-top" id="home">
+    <!-- header -->
+
+    <div class="headder-top">
+      <div id="logo">
+        <h1>
+          <a href="{% url 'index' %}">aqila</a>
+        </h1>
+      </div>
+      <!-- nav -->
+      
+      <nav>
+        <label for="drop" class="toggle">Menu</label>
+        <input type="checkbox" id="drop">
+        <ul class="menu">
+          <li class="active">
+            <a href="{% url 'index' %}">Home</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#blog">Services</a>
+          </li>
+          <li>
+ 
+            <li>
+              <a href="#contact">Contact Us</a>
+            </li>
+        </ul>
+      </nav>
+   
+    </div>
+    <!-- //header -->
+    <!-- banner -->
+    <div class="main-banner">
+      <div class="container">
+        <div class="mainer-left-grid">
+          <div class="banner-right-txt">
+            <div class="social-icons">
+              <ul>
+                <li>
+                  <a href="https://web.facebook.com/Aqila-112442573624048/?modal=admin_todo_tour">
+                    <span class="fa fa-facebook "></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/Aqila81124593">
+                    <span class="fa fa-twitter "></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/company/aqila/">
+                    <span class="fa fa-linkedin-square" aria-hidden="true"></span>
+
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="fa fa-envelope"></span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <h4 class="mb-3">Get Intelligent Services </h4>
+            <h5>With
+              <span>Aqila</span>
+         
+            </h5>
+             <h4 class="mb-3">in </h4>
+            <div class="two-demo-button mt-lg-4 mt-md-3 mt-3">
+              <p class="mt-2">
+                <span class="fa fa-arrow-right mr-2" aria-hidden="true"></span> FinTech</p>
+              <p class="mt-2">
+                <span class="fa fa-arrow-right mr-2" aria-hidden="true"></span> Medical Image Analysis</p>
+              <p class="mt-2">
+                <span class="fa fa-arrow-right mr-2" aria-hidden="true"></span> Education & Mentorship</p>
+            </div>
+            <!--<div class="view-buttn mt-lg-5 mt-md-4 mt-sm-4 mt-3">
+              <a href="#blog" class="btn">Read More</a>-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- //banner -->
+
+  <!--//about -->
+  <section class="about py-lg-4 py-md-3 py-sm-3 py-3" id="about">
+    <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
+      <div class="row">
+        <div class="col-lg-7 about-grid-wthree">
+          <p class="mb-lg-5 mb-md-4 mb-3">Aqila is a visionary Nairobi based AI Startup that is committed to 
+          developing powerful technologies in medical image analysis, FinTech & education. The name Aqila is
+           deliverd from the name Akila that originates from the Arabic language meaning 'Intelligent'. Our Core Principals are:  </p>
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 about-grid-grids my-3">
+              <div class="about-fashion-grid ">
+                <div class="about-icon mb-3">
+                  <span class="fa fa-reply-all" aria-hidden="true"></span>
+                </div>
+                <h6>Excellence</h6>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 about-grid-grids my-3">
+              <div class="about-fashion-grid ">
+                <div class="about-icon mb-3">
+                  <span class="fa fa-desktop" aria-hidden="true"></span>
+                </div>
+                <h6>Passion</h6>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 about-grid-grids my-3">
+              <div class="about-fashion-grid ">
+                <div class="about-icon mb-3">
+                  <span class="fa fa-lightbulb-o" aria-hidden="true"></span>
+                </div>
+                <h6>Creative </h6>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 about-grid-grids my-3">
+              <div class="about-fashion-grid">
+                <div class="about-icon mb-3">
+                  <span class="fa fa-handshake-o" aria-hidden="true"></span>
+                </div>
+                <h6>Integrity & Honesty </h6>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-lg-5 text-center">
+          <h3 class="title text-center mb-lg-5 mb-sm-4 mb-4">
+            <span>A Few Words</span> About Us</h3>
+          <img src="{% static 'images/about.jpg' %}" alt="news image" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--//about -->
+
+
+
+  <!--Our Goals -->
+  <section class="our-goals" id="service">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-5 service-grid-set">
+          <h3 class="title text-center mb-lg-5 mb-sm-4 mb-4">
+            <span>Our</span> Goals</h3>
+          <div class="row mb-lg-5 mb-sm-4 mb-3 my-3 ">
+            <div class="col-lg-2 col-md-3 col-sm-3">
+              <div class="jst-icon-goal text-center">
+                <span class="fa fa-money" aria-hidden="true"></span>
+              </div>
+            </div>
+            <div class="col-lg-10 col-md-9 col-sm-9 goals-making-wthree">
+              <h4 class="Sub-txt-w3ls mb-2">Financial Inclusion</h4>
+              <p>We aim to provide Intelligent systems that will reduce the risks to lenders and help high risk
+               individuals and companies to access finacial services.</p>
+            </div>
+          </div>
+          <div class="row mb-lg-5 mb-sm-4 mb-3 my-3">
+            <div class="col-lg-2 col-md-3 col-sm-3">
+              <div class="jst-icon-goal text-center">
+                <span class="fa fa-user-md" aria-hidden="true"></span>
+              </div>
+            </div>
+            <div class="col-lg-10 col-md-9 col-sm-9 goals-making-wthree">
+              <h4 class="Sub-txt-w3ls mb-2">Improving on Health Care</h4>
+              <p>Through Project Afya, we aim to develop state-of-the art technologies to help in detecting breast
+               cancer at an early stage to give women a better chance in their fight against breast cancer.</p>
+            </div>
+          </div>
+          <div class="row my-3">
+            <div class="col-lg-2 col-md-3 col-sm-3">
+              <div class="jst-icon-goal text-center">
+                <span class="fa fa-book" aria-hidden="true"></span>
+              </div>
+            </div>
+            <div class="col-lg-10 col-md-9 col-sm-9 goals-making-wthree">
+              <h4 class="Sub-txt-w3ls mb-2">Data Literacy to all</h4>
+              <p>We aim to enhance Data literacy in Kenya and Africa as a whole through our learning platform and mentorship programs to the youth.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7 w3layouts-make-goals">
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--//Our Goals -->
+  <!-- states -->
+  <section class="stats-count py-lg-4 py-md-3 py-sm-3 py-3">
+    <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
+      <div class="row text-center">
+        <div class="col-lg-3 col-md-3 col-sm-3 col-6 my-3 number-wthree-info ">
+          <h5>3</h5>
+          <h6 class="pt-2">Smile</h6>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-6 my-3 number-wthree-info">
+          <h5>0</h5>
+          <h6 class="pt-2">Awards</h6>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-6 my-3 number-wthree-info">
+          <h5>5</h5>
+          <h6 class="pt-2">Coffee</h6>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-6 my-3 number-wthree-info">
+          <h5>0</h5>
+          <h6 class="pt-2">Tea</h6>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--//states -->
+  <!-- blog -->
+  <section class="blog py-lg-4 py-md-3 py-sm-3 py-3" id="blog">
+    <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
+      <div class="row ">
+        <div class="col-lg-6 color-img-three">
+          <img src="{% static 'images/blog1.jpg' %}" alt="news image" class="img-fluid">
+        </div>
+        <div class="col-lg-6 back-ground-color position-relatives">
+          <h3 class="title text-center mb-lg-5 mb-sm-4 mb-4">
+            <span>Problems we</span> Solving</h3>
+          <div class="blog-left-position">
+            <div class="blog-date-grid mb-2">
+              <ul>
+                <li>
+                  <a href="#contact">#projectAfya</a>
+                </li>
+              </ul>
+            </div>
+            <div class="blog-left-wthree ">
+              <h4 class="mb-lg-4 mb-3">
+                <a href="#contact">Health</a>
+              </h4>
+              <p>We Use cutting edge AI technologies & methodologies in medical image analysis to increase
+                 early breast cancer detection. 
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-lg-5 mt-md-4 mt-sm-4 mt-3">
+
+        <div class="col-lg-6 back-ground-color position-relatives">
+          <div class="blog-right-position">
+            <div class="blog-date-grid mb-2">
+              <ul>
+                <li>
+                  <a href="#contact">#hourofCodeKenya</a>
+                </li>
+              </ul>
+            </div>
+            <div class="blog-left-wthree ">
+              <h4 class="mb-lg-4 mb-3">
+                <a href="#contact">Education & Mentorship</a>
+              </h4>
+              <p>We have partned with  Finastra, Yusudi and the G.O.K to educate & mentor kids in relevant IT skills
+                for the future.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 color-img-three">
+          <img src="{% static 'images/blog2.jpg' %}" alt="news image" class="img-fluid">
+        </div>
+      </div>
+      <div class="row mt-lg-5 mt-md-4 mt-sm-4 mt-3">
+        <div class="col-lg-6 color-img-three">
+          <img src="{% static 'images/ab1.jpg' %}" alt="news image" class="img-fluid">
+        </div>
+        <div class="col-lg-6 back-ground-color position-relatives">
+          <div class="blog-left-position">
+            <div class="blog-date-grid mb-2">
+              <ul>
+                <li>
+                  <!-- <a href="#contact">jan 2019/7</a> -->
+                </li>
+              </ul>
+            </div>
+            <div class="blog-left-wthree ">
+              <h4 class="mb-lg-4 mb-3">
+                <a href="#contact">Finance</a>
+              </h4>
+              <p>Financial inclusion for all people using Intelligent systems that give instant credit scoring to borrowers.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--//blog -->
+
+
+  <!-- team -->
+  <section class="clents py-lg-4 py-md-3 py-sm-3 py-3" id="team">
+    <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
+      <div class="row">
+        <div class="col-lg-4 team-grid-set text-center">
+          <h3 class="title text-center mb-lg-5 mb-sm-4 mb-4 clr">
+            <span>Brilliant</span> Team</h3>
+          <p>Team work makes the dream work. We are in love with what we do.</p>
+        </div>
+        <div class="col-lg-8 team-three-grids">
+          <div class="row">
+            <div class="col-lg-4 col-md-4 team-by-team">
+              <div class="team-img">
+                <img src="{% static 'images/t1.jpg' %}" alt="" class="img-fluid">
+              </div>
+              <div class="w3layouts-team-grid">
+                <h4>Timothy Madegwa</h4>
+                <h6 class="mt-2">Co-Founder & CEO</h6>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 team-by-team">
+              <div class="team-img">
+                <img src="{% static 'images/t2.jpg' %}" alt="" class="img-fluid">
+              </div>
+              <div class="w3layouts-team-grid">
+                <h4>Anthony Mwangi</h4>
+                <h6 class="mt-2">Co-Founder & Machine Learning Engineer</h6>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 team-by-team">
+              <div class="team-img">
+                <img src="{% static 'images/t3.jpg' %}" alt="" class="img-fluid">
+              </div>
+              <div class="w3layouts-team-grid">
+                <h4>Sharon Kirwa</h4>
+                <h6 class="mt-2">Co-Founder & Machine Learning Engineer</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- //team -->
+  <!--//contact-map -->
+  <div class="address_mail_footer_grids">
+
+    
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5605.911310272885!2d36.796941602125095!3d-1.2872715037739277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10b9e4bb51a1%3A0x91a170a138383f12!2sWoodlands%20Office%20Park!5e0!3m2!1sen!2ske!4v1581590685067!5m2!1sen!2ske" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+  </div>
+  <!--contact-map -->
+  <section class="footer-bottom py-lg-4 py-md-3 py-sm-3 py-3" id="contact">
+    <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
+      <h3 class="title text-center mb-lg-5 mb-sm-4 mb-4">
+        <span>Drop Us a</span> Line
+        {% comment %} alerts {% endcomment %}
+
+        {% include 'partials/_alerts.html' %}
+      </h3>
+      <div class=" contact-form-txt">
+        <form action="{% url 'contact' %}" method="post">
+        {% csrf_token %}
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 form-group contact-forms mb-3">
+              <input type="text" class="form-control" name="first_name" placeholder="First Name" required="">
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 form-group contact-forms mb-2">
+              <input type="text" class="form-control" name="last_name" placeholder="Last Name" required="">
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 form-group contact-forms mb-3">
+              <input type="email" class="form-control" name="email" placeholder="Email" required="">
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 form-group contact-forms mb-3">
+              <input type="text" class="form-control" name="phone" placeholder="Phone" required="">
+            </div>
+          </div>
+          <div class="form-group contact-forms">
+            <textarea class="form-control" name="message" placeholder="Message" rows="3" required=""></textarea>
+          </div>
+          <button type="submit" class="btn sent-butnn">Send</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!--//contact -->
+  <!-- footer -->
+  <section class="bottom-footer py-lg-4 py-md-3 py-sm-3 py-3">
+    <div class="container py-lg-5 py-md-5 py-sm-4 py-3">
+
+      <div class="row">
+        <div class="col-lg-6 col-md-6 footer-left-side">
+          <div class=" footer-top ">
+            <p>
+              <span>Address</span> : Woodlands Office Park
+              <br>Hurlingham, Nairobi</p>
+            <p class="pt-lg-3 pt-2">
+              <span> Phone</span> :+254 724245620</p>
+            <p class="pt-lg-3 pt-2">
+              <span>Email</span> :
+              <a href="mailto:aiaqila20@gmail.com">aiaqila20@gmail.com</a>
+            </p>
+          </div>
+
+        </div>
+        <div class="col-lg-6 col-md-6 footer-right-side">
+          <div class="footer-w3layouts-head mb-md-4 mb-3">
+            <h2>
+              <a href="{% url 'index' %}">Aqila</a>
+            </h2>
+          </div>
+          <p>We are a visionary AI Company that develops next-generation AI and Machine Learning technologies that inspires rapid and transformational growth across the globe.</p>
+        </div>
+      </div>
+      <!-- move icon -->
+      <div class="text-center mt-lg-5 mt-md-4 mt-3">
+        <a href="#home" class="move-top text-center mt-3">
+          <span class="fa fa-arrow-up" aria-hidden="true"></span>
+        </a>
+      </div>
+      <!--//move icon -->
+    </div>
+  </section>
+  <!-- footer -->
+  <!--footer-copy -->
+  <footer>
+    <div class="bottem-wthree-footer text-center py-md-4 py-3">
+      <p>
+        © 2020 Aqila. All Rights Reserved | Design by
+        <a href="http://www.W3Layouts.com" target="_blank">W3Layouts</a>
+      </p>
+    </div>
+  </footer>
+  <!-- //footer-copy -->
+ <script src="{% static 'js/main.js' %} "></script>
+
+{% endblock body %}
+
+
+

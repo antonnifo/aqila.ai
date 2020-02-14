@@ -1,0 +1,48 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <title>Aqila</title>
+  <!--meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="deep learning, machine learning, health,traffic" />
+  <script>
+    addEventListener("load", function () {
+      setTimeout(hideURLbar, 0);
+    }, false);
+
+    function hideURLbar() {
+      window.scrollTo(0, 1);
+    }
+  </script>
+  <!--//meta tags ends here-->
+  <!--booststrap-->
+  <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" type="text/css" media="all">
+  <!--//booststrap end-->
+  <!-- font-awesome icons -->
+  <link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet">
+  <!-- //font-awesome icons -->
+  <!--Favicon-->
+  <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
+  <link rel="icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
+  <!--stylesheets-->
+  <link href="{% static 'css/style.css' %} " rel='stylesheet' type='text/css' media="all">
+  <!--//stylesheets-->
+  <link href="//fonts.googleapis.com/css?family=Muli:400,600,700" rel="stylesheet">
+  <link href="//fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+
+</head>
+
+<body>
+
+{% block body %}
+
+
+{% endblock body %}
+
+</body>
+</html>
