@@ -1,0 +1,23 @@
+{% extends "admin/base.html" %}
+
+{% block title %}{{ title }} | Aqila Administration {% endblock %}
+
+{% block extrastyle %}
+<style>
+#header {
+    background: #00D0FF;  
+}
+
+input[type=submit] {
+    background: #00D0FF;
+}
+
+</style>
+
+{% endblock extrastyle %}
+
+{% block branding %}
+<h1 id="site-name"><a href="{% url 'admin:index' %}">Aqila Administration</a></h1>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}
